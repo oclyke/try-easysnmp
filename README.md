@@ -21,3 +21,8 @@ to avoid depending on MIBs and their strange awfulness we can simply identify th
 far better than trying to read a MIB text file... [this convenient resource](https://bestmonitoringtools.com/mibdb/mibdb_search.php) hosts pretty versions of the MIBs we need.
 
 * [EATON-EPDU-MIB](https://bestmonitoringtools.com/mibdb/mibdb_search.php?mib=EATON-EPDU-MIB)
+
+# ethernet to USB-C adapter
+on both Ubuntu and Windows I needed to assign the network adapter with its own static IP address and subnet mask before I was able to reach the PDUs web interface. not sure how relevant this will be when the PDU is on the actual network but adding this note here for reproducibility:
+* **ipaddress**: ```192.168.123.124``` (yes, I jut chose the one next to the default IP address of the PDU)
+* **net mask**: ```255.255.0.0``` *LITERALLY NO IDEA* what this does (and I've wondered ever since I was a 7y/o trying to play Halo on the original Xbox)
